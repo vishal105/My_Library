@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    package="com.example.vishal.my_library">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".DashBoard"
+            android:label="@string/title_activity_dash_board"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Charts.Barchart"
+            android:label="@string/title_activity_bar_chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Charts.Bubblechart"
+            android:label="@string/title_activity_bubble_chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Charts.Piechart"
+            android:label="@string/title_activity_pie_chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Charts.Linechart"
+            android:label="@string/title_activity_line_chart"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Custom_Spinner_object.SpinnerWithObject"
+            android:label="@string/title_activity_spinner_with_object"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".swipe_and_undo.Swipe_Undo"
+            android:label="@string/title_activity_swipe__undo"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+    </application>
+
+</manifest>
+

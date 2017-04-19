@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.vishal.CenturaLibraries.DashBoard"
+    tools:showIn="@layout/activity_dash_board">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Bar Chart"
+        android:id="@+id/tv_bar_chart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Bubble Chart"
+        android:id="@+id/tv_bubble_chart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Line Chart"
+        android:id="@+id/tv_line_chart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Pie Chart"
+        android:id="@+id/tv_pie_chart"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Spinner with Object"
+        android:id="@+id/tv_spinner_object"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Swipe and Undo"
+        android:id="@+id/tv_swipeactivity"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+
+
+</LinearLayout>
