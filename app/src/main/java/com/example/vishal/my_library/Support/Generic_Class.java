@@ -12,6 +12,7 @@ import com.example.vishal.my_library.Charts.Linechart;
 import com.example.vishal.my_library.Charts.Piechart;
 import com.example.vishal.my_library.Custom_Spinner_object.SpinnerWithObject;
 import com.example.vishal.my_library.R;
+import com.example.vishal.my_library.stikyheader.StickyHeader;
 import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
 
@@ -21,13 +22,14 @@ import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
 public class Generic_Class {
     public static void  drawactivity(final Context context){
-        final TextView barchartdraw,bubblechartdraw,piechartdraw,linechartdraw,customapinnerdraw,swipeundodraw;
+        final TextView barchartdraw,bubblechartdraw,piechartdraw,linechartdraw,customapinnerdraw,swipeundodraw,stikyheaderdraw;
         barchartdraw =(TextView)((Activity)context).findViewById(R.id.tv_bar_chart_draw);
         bubblechartdraw =(TextView)((Activity)context).findViewById(R.id.tv_bubble_chart_draw);
         piechartdraw =(TextView)((Activity)context).findViewById(R.id.tv_pie_chart_draw);
         linechartdraw =(TextView)((Activity)context).findViewById(R.id.tv_line_chart_draw);
         customapinnerdraw =(TextView)((Activity)context).findViewById(R.id.tv_spinner_object_draw);
         swipeundodraw = (TextView) ((Activity) context).findViewById(R.id.tv_swipeactivitydraw);
+        stikyheaderdraw = (TextView) ((Activity) context).findViewById(R.id.tv_stikyheader_draw);
 
         barchartdraw.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +70,13 @@ public class Generic_Class {
             @Override
             public void onClick(View v) {
                 ((Activity)context).startActivity(new Intent(context, Swipe_Undo.class));
+                ((Activity) context).finish();
+            }
+        });
+        stikyheaderdraw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, StickyHeader.class));
                 ((Activity) context).finish();
             }
         });

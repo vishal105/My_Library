@@ -11,4 +11,5 @@
     <string name="title_activity_swipe__undo">Swipe_Undo</string>
     <string name="deleted">Delete</string>
     <string name="undo">Undo</string>
+    <string name="title_activity_sticky_header">StickyHeader</string>
 </resources>

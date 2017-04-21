@@ -6,4 +6,5 @@
     <color name="white">#fff</color>
     <color name="yellow">#FFBB33</color>
     <color name="gray_background">#757575</color>
+    <color name="default_header_color">#445566</color>
 </resources>

@@ -12,11 +12,12 @@ import com.example.vishal.my_library.Charts.Bubblechart;
 import com.example.vishal.my_library.Charts.Linechart;
 import com.example.vishal.my_library.Charts.Piechart;
 import com.example.vishal.my_library.Custom_Spinner_object.SpinnerWithObject;
+import com.example.vishal.my_library.stikyheader.StickyHeader;
 import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
 
 public class DashBoard extends AppCompatActivity implements View.OnClickListener {
-    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview;
+    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview,stikyHeader;
 
 
     @Override
@@ -32,6 +33,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         linechart = (TextView) findViewById(R.id.tv_line_chart);
         customapinner = (TextView) findViewById(R.id.tv_spinner_object);
         swiperecyclerview = (TextView) findViewById(R.id.tv_swipeactivity);
+        stikyHeader = (TextView) findViewById(R.id.tv_stikyheader);
 
 
 
@@ -41,6 +43,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         linechart.setOnClickListener(this);
         customapinner.setOnClickListener(this);
         swiperecyclerview.setOnClickListener(this);
+        stikyHeader.setOnClickListener(this);
 
     }
 
@@ -65,6 +68,9 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.tv_swipeactivity:
                 startActivity(new Intent(DashBoard.this, Swipe_Undo.class));
+                break;
+            case R.id.tv_stikyheader:
+                startActivity(new Intent(DashBoard.this, StickyHeader.class));
                 break;
 
         }

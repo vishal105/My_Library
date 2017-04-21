@@ -78,6 +78,18 @@
         android:layout_height="@dimen/dimen_view"
         android:background="@color/colorAccent"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Stiky Header"
+        android:id="@+id/tv_stikyheader"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent"/>
+
+
 
 
 </LinearLayout>

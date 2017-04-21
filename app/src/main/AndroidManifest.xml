@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.vishal.my_library">
 
     <application
@@ -42,9 +42,11 @@
         <activity
             android:name=".swipe_and_undo.Swipe_Undo"
             android:label="@string/title_activity_swipe__undo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".stikyheader.StickyHeader"
+            android:label="@string/title_activity_sticky_header"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
     </application>
 
 </manifest>
-
