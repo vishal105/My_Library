@@ -1,6 +1,7 @@
 package com.example.vishal.my_library.swipe_and_undo;
 
 
+import android.content.DialogInterface;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -36,6 +37,7 @@ public class Swipe_Undo extends AppCompatActivity implements View.OnClickListene
     private RecyclerView recyclerView;
     private AlertDialog.Builder alertDialog;
     private EditText et_country;
+    DataAdapter dataAdapter;
     private int edit_position;
     private View view;
     private boolean add = false;
@@ -61,6 +63,7 @@ public class Swipe_Undo extends AppCompatActivity implements View.OnClickListene
         recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
 
         initViews(recyclerView);
+        initDialog();
        /* initViews();
         initDialog();*/
     }
@@ -70,7 +73,7 @@ public class Swipe_Undo extends AppCompatActivity implements View.OnClickListene
         fab.setOnClickListener(Swipe_Undo.this);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
-        final DataAdapter dataAdapter = new DataAdapter(countries);
+       dataAdapter = new DataAdapter(countries);
         //dataAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(dataAdapter);
 
@@ -224,6 +227,29 @@ public class Swipe_Undo extends AppCompatActivity implements View.OnClickListene
         });
         et_country = (EditText) view.findViewById(R.id.et_country);
     }*/
+
+    private void initDialog() {
+        alertDialog = new AlertDialog.Builder(this);
+        view = getLayoutInflater().inflate(R.layout.dialog_layout, null);
+        alertDialog.setView(view);
+        alertDialog.setPositiveButton("Save", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                if (add) {
+                    add = false;
+                    dataAdapter.addItem(et_country.getText().toString());
+                    dialog.dismiss();
+                } else {
+                    countries.set(edit_position, et_country.getText().toString());
+                    dataAdapter.notifyDataSetChanged();
+                    dialog.dismiss();
+                }
+
+            }
+        });
+        et_country = (EditText) view.findViewById(R.id.et_country);
+    }
+
     private void removeView() {
         if (view.getParent() != null) {
             ((ViewGroup) view.getParent()).removeView(view);

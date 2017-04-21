@@ -4,89 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="200dp"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/tv_bar_chart_draw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Bar Chart"
-        android:id="@+id/tv_bar_chart_draw"/>
+        android:text="Bar Chart" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
     <TextView
+        android:id="@+id/tv_bubble_chart_draw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Bubble Chart"
-        android:id="@+id/tv_bubble_chart_draw"/>
+        android:text="Bubble Chart" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
 
     <TextView
+        android:id="@+id/tv_line_chart_draw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Line Chart"
-        android:id="@+id/tv_line_chart_draw"/>
+        android:text="Line Chart" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
 
     <TextView
+        android:id="@+id/tv_pie_chart_draw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Pie Chart"
-        android:id="@+id/tv_pie_chart_draw"/>
+        android:text="Pie Chart" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
 
     <TextView
+        android:id="@+id/tv_spinner_object_draw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Spinner with Object"
-        android:id="@+id/tv_spinner_object_draw"/>
+        android:text="Spinner with Object" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_16dp"
-        android:text="Swipe and Undo"
-        android:id="@+id/tv_swipeactivitydraw"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
     <TextView
+        android:id="@+id/tv_swipeactivitydraw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/dimen_16dp"
-        android:text="Stiky Header"
-        android:id="@+id/tv_stikyheader_draw"/>
+        android:text="Swipe and Undo" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_view"
-        android:background="@color/colorAccent"/>
+        android:background="@color/colorAccent" />
 
+    <TextView
+        android:id="@+id/tv_stikyheader_draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Stiky Header" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_floatanimationdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Float Animation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_floatanimation2draw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Float Animation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
 
 
 </LinearLayout>

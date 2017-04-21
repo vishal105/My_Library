@@ -46,6 +46,14 @@
         <activity
             android:name=".stikyheader.StickyHeader"
             android:label="@string/title_activity_sticky_header"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FloatingWithAnimation.PathAnimation"
+            android:label="@string/title_activity_path_animation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FloatingWithAnimation.TumblrAnimation"
+            android:label="@string/title_activity_tumblranimation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

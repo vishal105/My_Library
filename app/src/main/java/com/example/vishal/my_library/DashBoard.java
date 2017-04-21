@@ -12,12 +12,15 @@ import com.example.vishal.my_library.Charts.Bubblechart;
 import com.example.vishal.my_library.Charts.Linechart;
 import com.example.vishal.my_library.Charts.Piechart;
 import com.example.vishal.my_library.Custom_Spinner_object.SpinnerWithObject;
+import com.example.vishal.my_library.FloatingWithAnimation.PathAnimation;
+import com.example.vishal.my_library.FloatingWithAnimation.TumblrAnimation;
 import com.example.vishal.my_library.stikyheader.StickyHeader;
 import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
 
 public class DashBoard extends AppCompatActivity implements View.OnClickListener {
-    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview,stikyHeader;
+    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview,stikyHeader,floatanimation,floatanimation2;
+
 
 
     @Override
@@ -34,6 +37,8 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         customapinner = (TextView) findViewById(R.id.tv_spinner_object);
         swiperecyclerview = (TextView) findViewById(R.id.tv_swipeactivity);
         stikyHeader = (TextView) findViewById(R.id.tv_stikyheader);
+        floatanimation = (TextView) findViewById(R.id.tv_floatanimation);
+        floatanimation2 = (TextView) findViewById(R.id.tv_floatanimation2);
 
 
 
@@ -44,6 +49,8 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         customapinner.setOnClickListener(this);
         swiperecyclerview.setOnClickListener(this);
         stikyHeader.setOnClickListener(this);
+        floatanimation.setOnClickListener(this);
+        floatanimation2.setOnClickListener(this);
 
     }
 
@@ -72,7 +79,12 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
             case R.id.tv_stikyheader:
                 startActivity(new Intent(DashBoard.this, StickyHeader.class));
                 break;
-
+            case R.id.tv_floatanimation:
+                startActivity(new Intent(DashBoard.this, PathAnimation.class));
+                break;
+            case R.id.tv_floatanimation2:
+                startActivity(new Intent(DashBoard.this, TumblrAnimation.class));
+                break;
         }
 
     }

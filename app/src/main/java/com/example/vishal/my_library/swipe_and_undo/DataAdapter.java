@@ -84,6 +84,15 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     public int getItemCount() {
             return countries.size();
     }
+    public void addItem(String country) {
+        countries.add(country);
+        notifyItemInserted(countries.size());
+    }
+    public void removeItem(int position) {
+        countries.remove(position);
+        notifyItemRemoved(position);
+        notifyItemRangeChanged(position, countries.size());
+    }
 
 
     /*public void addItem(String country) {
