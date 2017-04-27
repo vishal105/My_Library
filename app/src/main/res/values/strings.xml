@@ -14,6 +14,20 @@
     <string name="title_activity_sticky_header">StickyHeader</string>
     <string name="title_activity_path_animation">PathAnimation</string>
     <string name="title_activity_tumblranimation">tumblranimation</string>
+    <string name="title_activity_statusview_hike">StatusviewHike</string>
+    <string name="title_activity_progressbars">Progressbars</string>
+    <string name="title_activity_tabviewmain">Tabviewmain</string>
+
+    <string name="demo_tab_1">Cupcake</string>
+    <string name="demo_tab_2">Donut</string>
+    <string name="demo_tab_3">Eclair</string>
+    <string name="demo_tab_4">Froyo</string>
+    <string name="demo_tab_5">Gingerbread</string>
+    <string name="demo_tab_6">Honeycomb</string>
+    <string name="demo_tab_7">Ice Cream Sandwich</string>
+    <string name="demo_tab_8">Jelly Bean</string>
+    <string name="demo_tab_9">KitKat</string>
+    <string name="demo_tab_10">Lollipop</string>
 
 
 </resources>

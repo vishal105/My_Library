@@ -118,5 +118,41 @@
         android:layout_height="@dimen/dimen_view"
         android:background="@color/colorAccent" />
 
+    <TextView
+        android:id="@+id/tv_statusviewdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Status of Netactivity like In Hike" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_progressbariconsdraws"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Progrssbar icons" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_tabviewdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_16dp"
+        android:text="Tabview" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_view"
+        android:background="@color/colorAccent" />
+
 
 </LinearLayout>

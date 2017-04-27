@@ -14,12 +14,16 @@ import com.example.vishal.my_library.Charts.Piechart;
 import com.example.vishal.my_library.Custom_Spinner_object.SpinnerWithObject;
 import com.example.vishal.my_library.FloatingWithAnimation.PathAnimation;
 import com.example.vishal.my_library.FloatingWithAnimation.TumblrAnimation;
+import com.example.vishal.my_library.Progressbars.Progressbars;
+import com.example.vishal.my_library.Tabview.Tabviewmain;
+import com.example.vishal.my_library.statusview_Hike.StatusviewHike;
 import com.example.vishal.my_library.stikyheader.StickyHeader;
 import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
 
 public class DashBoard extends AppCompatActivity implements View.OnClickListener {
-    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview,stikyHeader,floatanimation,floatanimation2;
+    TextView barchart, bubblechart, piechart, linechart, customapinner,swiperecyclerview,stikyHeader,
+            floatanimation,floatanimation2,statushike,progressbaricons,tabview;
 
 
 
@@ -39,7 +43,9 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         stikyHeader = (TextView) findViewById(R.id.tv_stikyheader);
         floatanimation = (TextView) findViewById(R.id.tv_floatanimation);
         floatanimation2 = (TextView) findViewById(R.id.tv_floatanimation2);
-
+        statushike = (TextView) findViewById(R.id.tv_statusview);
+        progressbaricons = (TextView) findViewById(R.id.tv_progressbaricons);
+        tabview = (TextView) findViewById(R.id.tv_tabview);
 
 
         barchart.setOnClickListener(this);
@@ -51,6 +57,9 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         stikyHeader.setOnClickListener(this);
         floatanimation.setOnClickListener(this);
         floatanimation2.setOnClickListener(this);
+        statushike.setOnClickListener(this);
+        progressbaricons.setOnClickListener(this);
+        tabview.setOnClickListener(this);
 
     }
 
@@ -84,6 +93,15 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.tv_floatanimation2:
                 startActivity(new Intent(DashBoard.this, TumblrAnimation.class));
+                break;
+            case R.id.tv_statusview:
+                startActivity(new Intent(DashBoard.this, StatusviewHike.class));
+                break;
+            case R.id.tv_progressbaricons:
+                startActivity(new Intent(DashBoard.this, Progressbars.class));
+                break;
+            case R.id.tv_tabview:
+                startActivity(new Intent(DashBoard.this, Tabviewmain.class));
                 break;
         }
 

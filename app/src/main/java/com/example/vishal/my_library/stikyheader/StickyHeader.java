@@ -1,8 +1,6 @@
 package com.example.vishal.my_library.stikyheader;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,11 +10,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.mylibrary.stikyHeader.DividerDecoration;
-import com.example.mylibrary.stikyHeader.StickyHeaderDecoration;
+import com.example.mylibrary.StikyHeader.DividerDecoration;
+import com.example.mylibrary.StikyHeader.StickyHeaderDecoration;
 import com.example.vishal.my_library.R;
-
-import static android.R.id.list;
 
 public class StickyHeader extends AppCompatActivity implements RecyclerView.OnItemTouchListener {
     private RecyclerView mList;

@@ -23,8 +23,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.mylibrary.stikyHeader.StickyHeaderAdapter;
-import com.example.mylibrary.stikyHeader.StickyHeaderDecoration;
+import com.example.mylibrary.StikyHeader.StickyHeaderAdapter;
+import com.example.mylibrary.StikyHeader.StickyHeaderDecoration;
 import com.example.vishal.my_library.R;
 
 /*

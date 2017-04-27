@@ -17,10 +17,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-import com.example.mylibrary.swipeView.OnItemClickListener;
-import com.example.mylibrary.swipeView.RecyclerViewAdapter;
-import com.example.mylibrary.swipeView.Swipableiitemclicklistner;
-import com.example.mylibrary.swipeView.SwipeToDismissTouchListener;
+import com.example.mylibrary.SwipeView.OnItemClickListener;
+import com.example.mylibrary.SwipeView.RecyclerViewAdapter;
+import com.example.mylibrary.SwipeView.Swipableiitemclicklistner;
+import com.example.mylibrary.SwipeView.SwipeToDismissTouchListener;
 import com.example.vishal.my_library.R;
 
 import java.util.ArrayList;

@@ -13,7 +13,10 @@ import com.example.vishal.my_library.Charts.Piechart;
 import com.example.vishal.my_library.Custom_Spinner_object.SpinnerWithObject;
 import com.example.vishal.my_library.FloatingWithAnimation.PathAnimation;
 import com.example.vishal.my_library.FloatingWithAnimation.TumblrAnimation;
+import com.example.vishal.my_library.Progressbars.Progressbars;
 import com.example.vishal.my_library.R;
+import com.example.vishal.my_library.Tabview.Tabviewmain;
+import com.example.vishal.my_library.statusview_Hike.StatusviewHike;
 import com.example.vishal.my_library.stikyheader.StickyHeader;
 import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 
@@ -25,7 +28,7 @@ import com.example.vishal.my_library.swipe_and_undo.Swipe_Undo;
 public class Generic_Class {
     public static void  drawactivity(final Context context){
         final TextView barchartdraw,bubblechartdraw,piechartdraw,linechartdraw,customapinnerdraw,swipeundodraw,
-                stikyheaderdraw,floatdraw,float2draw;
+                stikyheaderdraw,floatdraw,float2draw,statusdraw,progrssbarsdraw,tabviewdraw;
         barchartdraw =(TextView)((Activity)context).findViewById(R.id.tv_bar_chart_draw);
         bubblechartdraw =(TextView)((Activity)context).findViewById(R.id.tv_bubble_chart_draw);
         piechartdraw =(TextView)((Activity)context).findViewById(R.id.tv_pie_chart_draw);
@@ -35,6 +38,9 @@ public class Generic_Class {
         stikyheaderdraw = (TextView) ((Activity) context).findViewById(R.id.tv_stikyheader_draw);
         floatdraw = (TextView) ((Activity) context).findViewById(R.id.tv_floatanimationdraw);
         float2draw = (TextView) ((Activity) context).findViewById(R.id.tv_floatanimation2draw);
+        statusdraw = (TextView) ((Activity) context).findViewById(R.id.tv_statusviewdraw);
+        progrssbarsdraw = (TextView) ((Activity) context).findViewById(R.id.tv_progressbariconsdraws);
+        tabviewdraw = (TextView) ((Activity) context).findViewById(R.id.tv_tabviewdraw);
 
         barchartdraw.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +102,27 @@ public class Generic_Class {
             @Override
             public void onClick(View v) {
                 context.startActivity(new Intent(context, TumblrAnimation.class));
+                ((Activity) context).finish();
+            }
+        });
+        statusdraw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, StatusviewHike.class));
+                ((Activity) context).finish();
+            }
+        });
+        progrssbarsdraw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, Progressbars.class));
+                ((Activity) context).finish();
+            }
+        });
+        tabviewdraw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, Tabviewmain.class));
                 ((Activity) context).finish();
             }
         });
